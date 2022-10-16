@@ -8,15 +8,11 @@
 int main(void)
 {
 	int n;
-	char ch;
+	char ch[]="0123456789abcdef";
 	
-	for (n = 0; n < 10; n++)
+	for (n = 0; n < 16; n++)
 	{
-		putchar(n);
-	}
-	for (ch = 'a'; ch <= 'f'; ch++)
-	{
-		putchar(ch);
+		putchar(ch[n]);
 	}
 	putchar('\n');
 	return (0);
