@@ -8,8 +8,8 @@
 int main(void)
 {
 	int n;
-	char ch[]="0123456789abcdef";
-	
+	char ch[] = "0123456789abcdef";
+
 	for (n = 0; n < 16; n++)
 	{
 		putchar(ch[n]);
