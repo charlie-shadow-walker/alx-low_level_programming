@@ -5,7 +5,7 @@
  * Return: lst_dgt
  */
 
-int print_last_digit(int)
+int print_last_digit(int n )
 {
 	int lst_dgt;
 
@@ -15,7 +15,7 @@ int print_last_digit(int)
 	}
 	else
 	{
-		lst_dgt = n % 10
+		lst_dgt = n % 10;
 	}
 	_putchar(lst_dgt + '0');
 	return (lst_dgt);
