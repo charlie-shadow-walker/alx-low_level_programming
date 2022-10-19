@@ -10,7 +10,8 @@ int main(void)
 
 	for (n = 10; n < 20; n++)
 	{
-		putchar(n);
+		putchar(n + 48);
+
 		if (n != 19)
 		{
 			putchar(',');
@@ -18,5 +19,6 @@ int main(void)
 		}
 	}
 	putchar('\n');
+
 	return (0);
 }
