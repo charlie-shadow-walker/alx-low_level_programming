@@ -2,10 +2,11 @@
 
 /**
  * print_last_digit - print last digit of a number.
+ * @n: takes integer type input for function.
  * Return: lst_dgt
  */
 
-int print_last_digit(int n )
+int print_last_digit(int n)
 {
 	int lst_dgt;
 
