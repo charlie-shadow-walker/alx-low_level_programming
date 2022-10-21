@@ -1,5 +1,3 @@
-#include"main.h"
-
 /**
  * _isgidit - checks for input
  * @c: input
