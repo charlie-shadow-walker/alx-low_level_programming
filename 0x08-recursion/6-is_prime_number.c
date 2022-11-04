@@ -1,4 +1,3 @@
-lines (35 sloc)  769 Bytes
 #include "main.h"
 
 int is_divisible(int num, int div);
