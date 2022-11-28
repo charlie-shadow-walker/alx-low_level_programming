@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * list_len - prints the number of elements in list_t
+ * list_len - the number of elements in list_t
  *
  * @h: pointer to the head
  *
