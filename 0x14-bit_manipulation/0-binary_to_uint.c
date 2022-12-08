@@ -11,23 +11,25 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	int num;
-	int i = 0;
-	num = atoi(b);
-	dec_value = 0;
-	base = 1;
+	unsigned int base = 1, len = 0, result = 0;
 
-	if (b != 0 || b != 1 || b == NULL)
+	if (b == NULL)
 	{
 		return (0);
 	}
-
-	while (num)
+	while (*(b + len))
 	{
-		i = num % 10;
-		dec_value += i * base;
+		len++;
+	}
+
+	while (len)
+	{
+		if (b[len - 1] != '0' && b[len - 1] != '1')
+			return (0);
+		if (b[len - 1] == '1')
+			result = result + base;
 		base = base * 2;
 	}
 
-	return (dec_value);
+	return (result);
 }
